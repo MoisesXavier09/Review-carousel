@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+h1 {
+    color: #333;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    background-color: rgb(111, 201, 253);
+    width: 150px;
+    height: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card {
+    background-color: white;
+    border-radius: 25px;
+    padding: 35px 30px;
+    max-width: 750px;
+    /* height: 450px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .photo {
+    position: relative;
+}
+
+.card .photo .symbol {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    background-color: rgb(111, 201, 253);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.card .photo img {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 7px -4px 0px rgb(111, 201, 253);
+}
+
+.card .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card .content h2 {
+    letter-spacing: 2px;
+}
+
+.card .content span {
+    color: rgb(111, 201, 253);
+}
+
+.card .content p {
+    font-size: 20px;
+    color: rgba(43, 43, 43, 0.5);
+    line-height: 25px;    
+}
+
+.card .arrows {
+    display: flex;
+    gap: 35px;
+}
+
+.card .left,
+.card .right {
+    color: rgb(111, 201, 253);
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    text-shadow: 0px 3px 1px rgba(0, 0, 0, .7);
+}
+
+/* .card .left:hover,
+.card .right:hover {
+    color: rgb(69, 128, 161);
+} */
+
+.card button {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(111, 201, 253);
+    background-color: rgb(238, 250, 255);
+    border: 2px solid rgb(111, 201, 253);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
